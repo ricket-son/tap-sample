@@ -10,7 +10,7 @@ metadata:
     - web
     - tanzu
   annotations:
-    'backstage.io/kubernetes-label-selector': 'app.kubernetes.io/part-of=tanzu-java-web-app'
+    backstage.io/kubernetes-label-selector: app.kubernetes.io/part-of=tanzu-java-web-app
     backstage.io/techdocs-ref: dir:.
   links:
     - url: https://tanzu-java-web-app.tap-test-dev.tap.dieunkrauts.de
