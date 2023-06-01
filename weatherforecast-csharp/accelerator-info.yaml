@@ -1,0 +1,15 @@
+id: 77cdc17f-e8b6-4108-ab03-63b4d31de0a6
+timestamp: 2023-06-01T15:44:57Z
+username: guest
+source: TAP-GUI
+accelerator:
+  name: weatherforecast-csharp
+  source:
+    image: harbor.dieunkrauts.de/tap/tap-packages@sha256:d08db384477a6a0b1b288b70aea1c1d24b7ea38edd726b4c1b977128e625046b
+fragments:
+  - name: tap-workload
+    source:
+      image: harbor.dieunkrauts.de/tap/tap-packages@sha256:dbf0dedb6848ad8a7704c1c19465a1ddae9039b0e63c1dd0df3e2ed9cbda6093
+options:
+  applicationName: weatherforecast-csharp
+  projectName: weatherforecast-csharp
