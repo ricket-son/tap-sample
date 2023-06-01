@@ -2,3 +2,5 @@ site_name: 'tanzu-java-web-app-docs'
 
 nav:
   - Home: index.md
+  - JavaWebApp: tanzu-java-web-app/README.md
+  - WeatherForecast: weatherforecast-csharp/README.md

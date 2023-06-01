@@ -4,6 +4,7 @@ metadata:
   name: weatherforecast-csharp
   annotations:
     "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=weatherforecast-csharp"
+    backstage.io/techdocs-ref: dir:./../../..
   links:
     - url: https://weatherforecast-csharp.tap-test-dev.tap.dieunkrauts.de
       title: Weather Forecast C#
