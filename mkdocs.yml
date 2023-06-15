@@ -1,6 +1,7 @@
-site_name: 'tanzu-java-web-app-docs'
-
+site_name: Weatherforecast C# Documentation
 nav:
   - Home: index.md
-  - JavaWebApp: tanzu-java-web-app/README.md
   - WeatherForecast: weatherforecast-csharp/README.md
+repo_url: https://github.com/ricket-son/tap-sample
+plugins:
+  - techdocs-core
