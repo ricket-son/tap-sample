@@ -1,0 +1,14 @@
+apiVersion: carto.run/v1alpha1
+kind: Workload
+metadata:
+  name: goapi
+  labels:
+    apps.tanzu.vmware.com/workload-type: web
+    app.kubernetes.io/part-of: goapi
+spec:
+  source:
+    git:
+      url: https://github.com/ricket-son/tap-sample
+      ref:
+        branch: main
+    subpath: goapi
