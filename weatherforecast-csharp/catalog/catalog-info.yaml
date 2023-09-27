@@ -6,7 +6,7 @@ metadata:
     "backstage.io/kubernetes-label-selector": "app.kubernetes.io/part-of=weatherforecast-csharp"
     backstage.io/techdocs-ref: dir:./../..
   links:
-    - url: https://weatherforecast-csharp.tap-test-dev.tap.dieunkrauts.de
+    - url: https://weatherforecast-csharp.dev-ns-01.devtap.evoila.digital
       title: Weather Forecast C#
       icon: catalog
 spec:
