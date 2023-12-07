@@ -1,0 +1,39 @@
+accelerator:
+  displayName: Kubeconfig Accelerator
+  description: Creates a useless kubernetes kubeconfig
+  iconUrl: https://blogs.vmware.com/wp-content/uploads/2022/02/tap.png
+  tags:
+    - simple
+    - kubeconfig
+  options:
+    - name: userName
+      inputType: text
+      label: Users name replaced in the kubeconfig
+      defaultValue: username
+      required: true
+    - name: userToken
+      inputType: text
+      label: Users token replaced in the kubeconfig
+      defaultValue: token hash
+      required: true
+    - name: userNamespace
+      inputType: text
+      label: Users namespace replaced in the kubeconfig
+      defaultValue: namespace
+      required: true
+engine:
+  merge:
+    - include: [ "kubeconfig", "README.md" ]
+      chain: 
+      - type: ReplaceText
+        substitutions:
+          - text: "USER_NAME"
+            with: "#userName"
+      - type: ReplaceText
+        substitutions:
+          - text: "USER_TOKEN"
+            with: "#userToken"
+      - type: ReplaceText
+        substitutions:
+          - text: "USER_NAMESPACE"
+            with: "#userNamespace"
